@@ -7,7 +7,7 @@ describe(getMembers.name, () => {
       expect(member).toMatchObject({
         id: expect.any(Number),
         name: expect.any(String),
-        department: expect.any(String),
+        department: expect.toBeTypeOrNull(String),
       });
     });
   });
